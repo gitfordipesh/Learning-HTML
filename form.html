@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <form autocomplete="off">
+        <label for="search">Search Here : 
+            <input type="search" name="search" id="srh" placeholder="What Are You Looking for?"><br>
+        </label>
+        <label for="username">Username : 
+            <input type="text" name="username" placeholder="Enter Your Username Here" autofocus required><br>
+        </label>
+        <label for="email">Email ID : 
+            <input type="email" name="Email" placeholder="EmailId" required><br>
+        </label>
+        <label for="gender">Gender : </label>
+        <label for="male">
+            <input type="radio" name="gender" id="male" value="male">Male 
+        </label>
+        <label for="female">
+            <input type="radio" name="gender" id="female" value="female"> Female <br>
+        </label>
+        <label for="mobno">Mobile No. : </label>
+        <input type="number" name="mobno"><br>
+        <label for="languages">Languages : </label>
+        <label for="eng">
+            <input type="checkbox" name="languages" id="eng" value="english">English 
+        </label>
+        <label for="hind">
+            <input type="checkbox" name="languages" id="hind" value="hindi">Hindi
+        </label>
+        <label for="frnch">
+            <input type="checkbox" name="languages" id="frnch" value="french">French <br>
+        </label>
+        <label for="dropdown">Choose : </label>
+        <select name = "dropdown">
+            <option value = "Data Structures" selected>Data Structures</option>
+            <option value = "Data Mining">Data Mining</option>
+            <option value="DataBase Management">DataBase Management</option>
+        </select><br>
+        <label for="mycolor">Color : </label>
+        <input type="text" name="mycolor" list="colors" />
+        <datalist id="colors">
+            <option value="Red">
+            <option value="Green">
+            <option value="Yellow">
+        </datalist><br>
+        <label for="message">Message : </label><textarea name="message" cols="30" rows="10"></textarea><br>
+        <label for="password">Password : </label>
+        <input type="password" name="Password" required><br>
+        <input type="button" value="Submit"><br>
+    </form>
+</html>
