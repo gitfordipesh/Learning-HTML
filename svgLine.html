@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu With SVG</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: cornsilk;
+    }
+    header{
+        text-align: center;
+        color: rgb(163, 77, 46);
+
+    }
+    nav{
+        background-color:brown;
+        padding:5px;
+        height: fit-content;
+    }
+    svg{
+        margin-top: 7px;
+        padding: 5px;
+    }
+    svg:hover{
+        opacity: 0.2;
+    }
+    svg line{
+        stroke: black;
+        stroke-width: 2;
+    }
+    ul {
+        list-style-type: none;
+        margin: 50;
+        padding: 30;
+    }
+    li {
+        display: inline;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: large;
+    }
+    li a{
+        color: white;
+    }
+    li:hover{
+        opacity: 0.5;
+        color: azure;
+        border:1px transparent black;
+        border-radius: 25px;
+        background-color: rgb(180, 80, 80);
+    }
+    .mymenu{
+        display: inline;
+        float: left;
+    }
+    .container{
+        height: 50px;
+    }
+    .container2{
+        height: 1000px;
+    }
+    .column{
+        height: 1000px;
+        float: left;
+        width : 33.3%;
+    }
+    div#first{
+        background-color: rgb(243, 215, 181);
+        width : 25%;
+    }
+    div#second{
+        background-color: rgb(254, 185, 101);
+        width : 50%;
+    }
+    div#third{
+        background-color: rgb(199, 121, 53);
+        width : 25%;
+    }
+    h3{
+        text-align: center;
+    }
+    p{
+        padding: 10px;
+        margin: 5px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Creating Menu with SVG</h1>
+    </header>
+    <nav>
+        <div class="container">
+            <div id="menu" class="mymenu">
+                <svg width ="50" height = "30">
+                    <line x1="10" y1="10" x2="30" y2="10"/>
+                    <line x1="10" y1="15" x2="30" y2="15"/>
+                    <line x1="10" y1="20" x2="30" y2="20"/>
+                </svg>
+            </div>
+            <div class="mymenu">
+                <ul>
+                    <li><a href="/div.html" target="_blank">Home</a></li>
+                    <li><a href="/blog.html" target="_blank">Blogs</a></li>
+                    <li><a href="/aboutUs.html" target="_blank">About</a></li>
+                    <li><a href="/contactus.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container2">
+        <div class="column" id="first">
+            <h3>This is a first Container</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius pariatur quasi aliquam accusamus quas architecto vero aperiam fuga, laudantium enim sequi quisquam dolorum error? Laudantium, assumenda. Fuga voluptas animi, omnis voluptatem sit in tenetur. Autem expedita ea assumenda commodi incidunt, repudiandae odio, dolorem reiciendis similique alias, corporis atque aliquam!
+            </p>
+            <button style="margin-left:100px;">
+                <a href="https://google.com" target="blank"> Google</a>
+            </button>
+        </div>
+        <div class="column" id="second">
+            <h3>This is a Second Container</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint eos itaque odit quas sed, reprehenderit illo quaerat? Ipsa repudiandae, atque consectetur eveniet pariatur sequi, nostrum laboriosam inventore aliquid magni, cum maxime beatae ipsum vitae.</p>
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.99images.com%2Fwallpapers%2F3d-abstract%2Fgreen-and-black-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-f1b4%2F845304&psig=AOvVaw38fzesV9Afi_aLpcxwSGyq&ust=1650700912721000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPCl-KCap_cCFQAAAAAdAAAAABAJ" alt="Vertical Wallpaper" style="margin-left:100px;">
+            <br>
+            <hr>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates aliquid incidunt eius quam nemo qui illum sed, pariatur ducimus vitae officia unde magnam consequuntur voluptate ab tenetur obcaecati ea. Sed distinctio ipsum esse culpa beatae itaque doloremque aspernatur perferendis dignissimos deserunt. Voluptatibus quo, perferendis facere repellendus recusandae maxime eum in placeat, deserunt eaque natus possimus exercitationem ducimus molestiae enim earum, quaerat maiores iure optio repudiandae inventore ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquid deleniti facere veniam, cupiditate impedit consequuntur. Harum, esse perferendis culpa dolores nostrum asperiores facilis aspernatur, a vero odio ab quae consequatur assumenda atque aliquam in?</p>
+            <video src="/video1.mp4" controls style="margin-left:100px;">Not Supported By Browser</video>
+            <p>Thats It.</p>
+        </div>
+        <div class="column" id="third">
+            <h3>This is a third Container</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta blanditiis ea minus quasi ab repellat fugiat, eaque eveniet sunt hic at expedita numquam.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>
+            Created a menu option using Scalable Vector Graphics.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, cum vel minus dolores nostrum distinctio odio, doloremque quas iusto eligendi quia eos natus nobis? Nisi odio sunt soluta illo porro velit atque voluptatibus cum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellat fugiat hic ex omnis magni asperiores cum commodi ad consectetur quia mollitia eos dignissimos quam impedit, iusto dicta molestias facilis quaerat et. Tenetur labore, impedit nam beatae voluptatum accusamus nostrum maiores. Obcaecati ipsa nihil voluptatibus quos placeat maiores omnis perferendis explicabo temporibus corrupti? Aperiam beatae ea sit quasi officiis eius esse voluptatibus illo sapiente facilis, voluptates odio quos rem fugiat non dignissimos voluptate doloremque at soluta unde modi!
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, neque!
+        </p>
+    </footer>
+</body>
+</html>
